@@ -55,3 +55,72 @@ button {
 button:hover {
   background-color: #e13c3c;
 }
+.share-buttons {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.share-buttons button {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#share-twitter {
+  background-color: #1da1f2;
+}
+#counter {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+/* Animación de aparición suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.excuse-box.fade {
+  animation: fadeIn 0.4s ease-in-out;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .excuse-box {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+  }
+
+  #counter {
+    font-size: 0.9rem;
+  }
+
+  .share-buttons {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
